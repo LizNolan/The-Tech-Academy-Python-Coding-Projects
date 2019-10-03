@@ -8,7 +8,8 @@ filelist= os.listdir(dirPath)
 
 for filename in filelist:
    if(filename.endswith(".txt")):
-       print(filename, filename.endswith(".txt"),os.path.join(dirPath, filename),os.path.getmtime(filename))
+       filepath=os.path.join(dirPath, filename)
+       print(filename,os.path.getmtime(filepath))
 
 
 
